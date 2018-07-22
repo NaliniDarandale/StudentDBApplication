@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddStudentActivity"
+    android:background="@drawable/blue_bg">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".AddStudentActivity">
+
+            <EditText
+                android:id="@+id/addName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Name"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/addSurname"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addName"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Surname"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/addAddress"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addSurname"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Address"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/addContact"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/addDOB"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addContact"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Date of Birth"
+                android:inputType="date"
+                android:textAlignment="center" />
+
+            <RadioGroup
+                android:id="@+id/genderRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addDOB"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/genMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/genFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/m1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/genderRadio"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Marks of Subject 1"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/m2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Marks of Subject 2"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/m3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Marks of Subject 3"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/addDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m3"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="ADD"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddStudentActivity"
+    android:background="@drawable/blue_bg">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".AddStudentActivity">
+
+            <EditText
+                android:id="@+id/updateName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/updateSurname"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateName"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/updateAddress"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateSurname"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/updateContact"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/updateDOB"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateContact"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:inputType="date"
+                android:textAlignment="center" />
+
+            <RadioGroup
+                android:id="@+id/updategenderRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateDOB"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/updategenMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/updategenFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/updatem1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updategenderRadio"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/updatem2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatem1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/updatem3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatem2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/updateDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatem3"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="UPDATE"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

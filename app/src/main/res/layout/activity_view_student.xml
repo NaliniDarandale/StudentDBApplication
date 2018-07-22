@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/blue_bg"
+    tools:context=".ViewStudent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_account_box_black_24dp" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Nalini Darandale"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/btnLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/callView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:src="@drawable/ic_call" />
+
+        <ImageButton
+            android:id="@+id/smsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:src="@drawable/ic_mail" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/detailsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:text="ID : 01\n\nCONTACT NO : 9423010979\n\nDATE OF BIRTH : 19/12/1995\n\nGENDER : Female\n\nMARKS 1 : 60\n\nMARKS 2 : 65\n\nMARKS 3 : 62\n\nTOTAL : 187\n\nPERCENTAGE : 62.3\n\nREMARK : FIRST CLASS"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="5dp"
+        android:text="ADDRESS :"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/studentAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:text="Anandnagar, Kothrud, Pune"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/addressMapButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:drawableEnd="@drawable/ic_location"
+        android:text="FIND ON MAP..." />
+
+</LinearLayout>
